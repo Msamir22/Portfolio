@@ -2,7 +2,7 @@
 
 // configure
 $from = 'info@yourdomain.com'; // Replace it with Your Hosting Admin email. REQUIRED!
-$sendTo = 'your@mail.com'; // Replace it with Your email. REQUIRED!
+$sendTo = 'Mohamed_Samir9696@hotmail.com'; // Replace it with Your email. REQUIRED!
 $subject = 'New message from contact form';
 $fields = array('name' => 'Name', 'email' => 'Email', 'subject' => 'Subject', 'message' => 'Message'); // array variable name => Text to appear in the email. If you added or deleted a field in the contact form, edit this array.
 $okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
@@ -10,20 +10,19 @@ $errorMessage = 'There was an error while submitting the form. Please try again 
 
 // let's do the sending
 
-if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
+if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
     //your site secret key
     $secret = '6LdqmCAUAAAAANONcPUkgVpTSGGqm60cabVMVaON';
     //get verify response data
 
-    $c = curl_init('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
+    $c = curl_init('https://www.google.com/recaptcha/api/siteverify?secret=' . $secret . '&response=' . $_POST['g-recaptcha-response']);
     curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
     $verifyResponse = curl_exec($c);
 
     $responseData = json_decode($verifyResponse);
-    if($responseData->success):
+    if ($responseData->success):
 
-        try
-        {
+        try {
             $emailText = nl2br("You have new message from Contact Form\n");
 
             foreach ($_POST as $key => $value) {
@@ -33,18 +32,17 @@ if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'
                 }
             }
 
-            $headers = array('Content-Type: text/html; charset="UTF-8";',
+            $headers = array(
+                'Content-Type: text/html; charset="UTF-8";',
                 'From: ' . $from,
                 'Reply-To: ' . $from,
                 'Return-Path: ' . $from,
             );
-            
+
             mail($sendTo, $subject, $emailText, implode("\n", $headers));
 
             $responseArray = array('type' => 'success', 'message' => $okMessage);
-        }
-        catch (\Exception $e)
-        {
+        } catch (\Exception $e) {
             $responseArray = array('type' => 'danger', 'message' => $errorMessage);
         }
 
@@ -54,8 +52,7 @@ if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'
             header('Content-Type: application/json');
 
             echo $encoded;
-        }
-        else {
+        } else {
             echo $responseArray['message'];
         }
 
@@ -64,17 +61,17 @@ if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'
         $responseArray = array('type' => 'danger', 'message' => $errorMessage);
         $encoded = json_encode($responseArray);
 
-            header('Content-Type: application/json');
+        header('Content-Type: application/json');
 
-            echo $encoded;
+        echo $encoded;
     endif;
 else:
     $errorMessage = 'Please click on the reCAPTCHA box.';
     $responseArray = array('type' => 'danger', 'message' => $errorMessage);
     $encoded = json_encode($responseArray);
 
-            header('Content-Type: application/json');
+    header('Content-Type: application/json');
 
-            echo $encoded;
+    echo $encoded;
 endif;
 
