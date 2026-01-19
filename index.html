@@ -1,1211 +1,671 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Mohamed Samir</title>
+
+    <!-- SEO Meta Tags -->
+    <title>Mohamed Samir | Senior Front-End Engineer (Angular)</title>
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
+      name="description"
+      content="Senior Front-End Engineer with 8+ years of experience architecting enterprise Angular applications. Specializing in performance optimization, UI architecture, and team leadership for U.S.-based companies."
     />
-    <meta name="description" content="Kerge - Resume / CV / vCard Template" />
     <meta
       name="keywords"
-      content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio"
+      content="Senior Front-End Engineer, Angular Developer, TypeScript, RxJS, Enterprise Applications, UI Architecture, Remote Developer"
     />
-    <meta name="author" content="lmpixels" />
+    <meta name="author" content="Mohamed Samir" />
+
+    <!-- Open Graph / Social -->
+    <meta
+      property="og:title"
+      content="Mohamed Samir | Senior Front-End Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Architecting enterprise Angular applications at scale. 8+ years of experience with U.S.-based companies."
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" />
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/animate.css" type="text/css" />
-    <link rel="stylesheet" href="css/animations.css" type="text/css" />
-    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-    <script src="js/modernizr.custom.js"></script>
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/design-system.css" />
   </head>
 
   <body>
-    <!-- Loading animation -->
-    <div class="preloader">
-      <div class="preloader-animation">
-        <div class="preloader-spinner"></div>
+    <!-- Navigation -->
+    <nav class="nav" id="main-nav">
+      <div class="container nav-content">
+        <a href="#" class="nav-logo logo-text">
+          <span class="logo-m">M</span><span class="logo-s">S</span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
-    </div>
-    <!-- /Loading animation -->
+    </nav>
 
-    <div id="page" class="page">
-      <!-- Header -->
-      <header id="site_header" class="header mobile-menu-hide">
-        <div class="header-content clearfix">
-          <div class="my-photo">
-            <img src="images/profile-pic.png" alt="image" />
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-badge">
+              <span class="badge badge-success"
+                >Available for Remote Opportunities</span
+              >
+            </div>
+
+            <h1 class="hero-title fade-in">
+              Senior Front-End Engineer<br />
+              <span class="hero-title-accent"
+                >Architecting Enterprise Angular</span
+              ><br />
+              Applications at Scale.
+            </h1>
+
+            <p class="hero-subtitle fade-in stagger-1">
+              Specializing in high-performance, scalable web solutions with over
+              8+ years of experience across the full development lifecycle,
+              leading teams and delivering critical business impact for
+              U.S.-based companies.
+            </p>
+
+            <div class="hero-cta fade-in stagger-2">
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a
+                href="files/Mohamed_Samir_CV.pdf"
+                class="btn btn-secondary"
+                style="background-color: white"
+                download
+              >
+                <i class="fas fa-download"></i> Download CV
+              </a>
+            </div>
           </div>
 
-          <div class="site-title-block">
-            <div class="site-title">Mohamed Samir</div>
+          <img
+            src="images/profile-pic.png"
+            alt="Mohamed Samir - Senior Front-End Engineer"
+            class="hero-image fade-in"
+          />
+        </div>
+      </div>
+
+      <a
+        href="#about"
+        class="hero-scroll-indicator"
+        aria-label="Scroll to about section"
+      >
+        <span>Scroll Down</span>
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- Impact Stats Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="heading-section fade-in">Impact by Numbers</h2>
+          <p class="text-lead fade-in stagger-1">
+            Measurable results from enterprise-scale Angular applications
+          </p>
+        </div>
+
+        <div class="grid grid-4 fade-in stagger-2">
+          <div class="stat-card">
+            <div class="stat-value count-up" data-target="8">0</div>
+            <div class="stat-suffix">+</div>
+            <div class="stat-label">Years Experience</div>
           </div>
 
-          <!-- Navigation -->
-          <div class="site-nav">
-            <!-- Main menu -->
-            <ul id="nav" class="site-main-menu">
-              <li>
-                <a class="pt-trigger" href="#about-me">About Me</a
-                ><!-- href value = data-id without # of .pt-page. -->
-              </li>
-              <li>
-                <a class="pt-trigger" href="#resume">Resume</a>
-              </li>
-              <li>
-                <a class="pt-trigger" href="#portfolio">Portfolio</a>
-              </li>
-              <li>
-                <a class="pt-trigger" href="#contact">Contact</a>
-              </li>
-            </ul>
-            <!-- /Main menu -->
+          <div class="stat-card">
+            <div class="stat-value">60-70%</div>
+            <div class="stat-label">Performance Gains</div>
           </div>
-          <!-- Navigation -->
 
-          <!-- Social Links -->
-          <div class="social-links">
-            <a href="https://github.com/Msamir22" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
+          <div class="stat-card">
+            <div class="stat-value count-up" data-target="25">0</div>
+            <div class="stat-suffix">+</div>
+            <div class="stat-label">Team Collaboration</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-value count-up" data-target="3">0</div>
+            <div class="stat-label">Engineers Mentored</div>
+          </div>
+        </div>
+
+        <!-- About Summary -->
+        <div class="container mt-8">
+          <div class="text-center fade-in">
+            <p
+              class="text-body"
+              style="
+                font-size: var(--text-lg);
+                max-width: 800px;
+                margin: 0 auto;
+              "
+            >
+              I build high-performance Angular applications for enterprise
+              clients, with a focus on clean architecture, scalable code, and
+              exceptional user experience. I thrive in remote, async-first
+              environments and bring both technical depth and product thinking
+              to every project.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section section-light" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="heading-section fade-in">Featured Projects</h2>
+          <p class="text-lead fade-in stagger-1">
+            Enterprise applications I've architected and shipped
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <!-- Project 1: Managed Receiving -->
+          <article class="card fade-in stagger-1">
+            <div style="overflow: hidden">
+              <img
+                src="images/portfolio/MR.png"
+                alt="Managed Receiving ERP System"
+                class="card-image"
+              />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Managed Receiving</h3>
+              <p class="card-description">
+                Enterprise ERP platform managing supply chain logistics for 500+
+                warehouse locations. Architected the Angular front-end and
+                optimized real-time data handling.
+              </p>
+              <div class="card-tags">
+                <span class="tag tag-primary">Angular</span>
+                <span class="tag tag-primary">RxJS</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Azure DevOps</span>
+              </div>
+              <a href="MR.html" class="card-link ajax-page-load">
+                View Details <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Yard Management System -->
+          <article class="card fade-in stagger-2">
+            <div style="overflow: hidden">
+              <img
+                src="images/portfolio/YMS.png"
+                alt="Yard Management System"
+                class="card-image"
+              />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Yard Management System</h3>
+              <p class="card-description">
+                Real-time RFID trailer tracking system integrated with the MR
+                platform. Built reusable Angular components for complex data
+                visualization.
+              </p>
+              <div class="card-tags">
+                <span class="tag tag-primary">Angular</span>
+                <span class="tag">Angular Material</span>
+                <span class="tag">RxJS</span>
+                <span class="tag">Jasmine</span>
+              </div>
+              <a href="YMS.html" class="card-link ajax-page-load">
+                View Details <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Prio -->
+          <article class="card fade-in stagger-3">
+            <div style="overflow: hidden">
+              <img
+                src="images/portfolio/Prio.png"
+                alt="Prio SaaS Product"
+                class="card-image"
+              />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Prio</h3>
+              <p class="card-description">
+                SaaS product built from scratch including timer, team
+                management, project management, and scheduling modules. Improved
+                performance by 25%.
+              </p>
+              <div class="card-tags">
+                <span class="tag tag-primary">Angular 11</span>
+                <span class="tag tag-primary">RxJS</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">REST API</span>
+              </div>
+              <a href="PRIO.html" class="card-link ajax-page-load">
+                View Details <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- More Projects Row -->
+        <div class="grid grid-3 mt-6">
+          <!-- Project 4: ThoroughWorks -->
+          <article class="card fade-in">
+            <div style="overflow: hidden">
+              <img
+                src="images/portfolio/TW.png"
+                alt="ThoroughWorks"
+                class="card-image"
+              />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">ThoroughWorks</h3>
+              <p class="card-description">
+                Sales management website with comprehensive task manager,
+                timesheets, contacts, and dashboard modules.
+              </p>
+              <div class="card-tags">
+                <span class="tag tag-primary">Angular</span>
+                <span class="tag">Bootstrap</span>
+                <span class="tag">SCSS</span>
+              </div>
+              <a href="TW.html" class="card-link ajax-page-load">
+                View Details <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 5: Portal Management -->
+          <article class="card fade-in stagger-1">
+            <div style="overflow: hidden">
+              <img
+                src="images/portfolio/Portal.png"
+                alt="Portal Management System"
+                class="card-image"
+              />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Portal Management</h3>
+              <p class="card-description">
+                Website management and task tracking system with products and
+                site manager functionalities.
+              </p>
+              <div class="card-tags">
+                <span class="tag tag-primary">Angular</span>
+                <span class="tag">Angular Material</span>
+                <span class="tag">RxJS</span>
+              </div>
+              <a href="PORTAL.html" class="card-link ajax-page-load">
+                View Details <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 6: Takafo -->
+          <article class="card fade-in stagger-2">
+            <div style="overflow: hidden">
+              <img
+                src="images/portfolio/Takafo.png"
+                alt="Takafo HR Solution"
+                class="card-image"
+              />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Takafo HR Solution</h3>
+              <p class="card-description">
+                AI-powered HR solution streamlining recruitment and employee
+                management processes.
+              </p>
+              <div class="card-tags">
+                <span class="tag tag-primary">Angular</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">REST API</span>
+              </div>
+              <a href="TAKAFO.html" class="card-link ajax-page-load">
+                View Details <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Expertise Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="heading-section fade-in">Technical Expertise</h2>
+          <p class="text-lead fade-in stagger-1">
+            Technologies I use to build scalable, maintainable applications
+          </p>
+        </div>
+
+        <div class="container">
+          <!-- Core Expertise -->
+          <div class="skills-group fade-in stagger-2">
+            <h3 class="skills-group-title">Core Expertise</h3>
+            <div class="skills-list">
+              <span class="skill-tag skill-tag-expert">Angular</span>
+              <span class="skill-tag skill-tag-expert">TypeScript</span>
+              <span class="skill-tag skill-tag-expert">RxJS</span>
+              <span class="skill-tag skill-tag-expert">JavaScript (ES6+)</span>
+              <span class="skill-tag skill-tag-expert">HTML5</span>
+              <span class="skill-tag skill-tag-expert">CSS3 / SCSS</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">React Native</span>
+              <span class="skill-tag">Expo</span>
+            </div>
+          </div>
+
+          <!-- Additional Skills Grid -->
+          <div class="grid grid-3 fade-in stagger-3">
+            <!-- State Management -->
+            <div class="skills-group">
+              <h3 class="skills-group-title">State Management</h3>
+              <div class="skills-list">
+                <span class="skill-tag skill-tag-expert"
+                  >Custom Services with BehaviorSubject</span
+                >
+                <span class="skill-tag">NGRX</span>
+                <span class="skill-tag">Akita</span>
+                <span class="skill-tag">Tanstack</span>
+              </div>
+            </div>
+
+            <!-- Testing -->
+            <div class="skills-group">
+              <h3 class="skills-group-title">Testing</h3>
+              <div class="skills-list">
+                <span class="skill-tag skill-tag-expert">Jasmine</span>
+                <span class="skill-tag skill-tag-expert">Karma</span>
+                <span class="skill-tag skill-tag-expert">Cypress</span>
+                <span class="skill-tag">Jest</span>
+              </div>
+            </div>
+
+            <!-- DevOps & Tools -->
+            <div class="skills-group">
+              <h3 class="skills-group-title">DevOps & Tools</h3>
+              <div class="skills-list">
+                <span class="skill-tag skill-tag-expert">Azure DevOps</span>
+                <span class="skill-tag skill-tag-expert">Git</span>
+                <span class="skill-tag skill-tag-expert">Nx Workspace</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- More Skills -->
+          <div class="grid grid-3 fade-in">
+            <!-- UI Frameworks -->
+            <div class="skills-group">
+              <h3 class="skills-group-title">UI Frameworks</h3>
+              <div class="skills-list">
+                <span class="skill-tag skill-tag-expert">Angular Material</span>
+                <span class="skill-tag skill-tag-expert">Bootstrap</span>
+                <span class="skill-tag skill-tag-expert">Tailwind CSS</span>
+              </div>
+            </div>
+
+            <!-- Backend & Database -->
+            <div class="skills-group">
+              <h3 class="skills-group-title">Backend & Database</h3>
+              <div class="skills-list">
+                <span class="skill-tag skill-tag-expert">Supabase</span>
+                <span class="skill-tag skill-tag-expert">Firebase</span>
+                <span class="skill-tag">Express.Js</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">SQL Server</span>
+              </div>
+            </div>
+
+            <!-- Methodologies -->
+            <div class="skills-group">
+              <h3 class="skills-group-title">Methodologies</h3>
+              <div class="skills-list">
+                <span class="skill-tag skill-tag-expert">OOP</span>
+                <span class="skill-tag skill-tag-expert">Agile/Scrum</span>
+                <span class="skill-tag">Design Patterns</span>
+                <span class="skill-tag">Database Design</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-small text-center mt-6 fade-in">
+            <span
+              class="skill-tag skill-tag-expert"
+              style="font-size: var(--text-xs)"
+              >★</span
+            >
+            = Primary expertise / daily driver
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-light" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="heading-section fade-in">Experience</h2>
+          <p class="text-lead fade-in stagger-1">
+            8+ years building enterprise-scale front-end applications
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="timeline fade-in stagger-2">
+            <!-- Capstone Logistics -->
+            <div class="timeline-item">
+              <div class="timeline-header">
+                <span class="timeline-period">2020 – Present</span>
+              </div>
+              <h3 class="timeline-role">Senior Front-End Engineer</h3>
+              <p class="timeline-company">Capstone Logistics · Remote (U.S.)</p>
+              <ul class="timeline-achievements">
+                <li>
+                  Led Angular UI architecture for enterprise ERP systems serving
+                  500+ warehouse locations
+                </li>
+                <li>
+                  Supervised and mentored 3 front-end engineers, conducting code
+                  reviews and technical guidance
+                </li>
+                <li>
+                  Achieved 60-70% performance improvements through strategic
+                  optimization and refactoring
+                </li>
+                <li>
+                  Collaborated with a team of 25 in an agile environment using
+                  Azure DevOps
+                </li>
+                <li>
+                  Built reusable component library for Yard Management and
+                  Managed Receiving systems
+                </li>
+              </ul>
+            </div>
+
+            <!-- Miramar Tech -->
+            <div class="timeline-item">
+              <div class="timeline-header">
+                <span class="timeline-period">2019 – 2020</span>
+              </div>
+              <h3 class="timeline-role">Front-End Engineer</h3>
+              <p class="timeline-company">Miramar Tech</p>
+              <ul class="timeline-achievements">
+                <li>
+                  Built key modules from scratch: timer, team management,
+                  project management, scheduling
+                </li>
+                <li>
+                  Improved application performance by 25% through code
+                  optimization and refactoring
+                </li>
+                <li>
+                  Created reusable TypeScript components and services for REST
+                  API consumption
+                </li>
+                <li>
+                  Resolved 3-5 technical issues daily, enhancing overall user
+                  experience
+                </li>
+              </ul>
+            </div>
+
+            <!-- iSky Development -->
+            <div class="timeline-item">
+              <div class="timeline-header">
+                <span class="timeline-period">2018 – 2019</span>
+              </div>
+              <h3 class="timeline-role">Front-End Engineer</h3>
+              <p class="timeline-company">iSky Development</p>
+              <ul class="timeline-achievements">
+                <li>
+                  Designed and developed web applications using Angular, RxJS,
+                  and Angular Material
+                </li>
+                <li>
+                  Built essential modules: task manager, timesheets, contacts,
+                  dashboard, products
+                </li>
+                <li>
+                  Collaborated with cross-functional teams to deliver projects
+                  on time
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Education Summary -->
+          <div class="mt-8 text-center fade-in">
+            <p class="text-body">
+              <strong>Education:</strong> B.S. Computer Science, Misr University
+              for Science and Technology (2018)
+            </p>
+            <a
+              href="files/Mohamed_Samir_CV.pdf"
+              class="btn btn-secondary mt-4"
+              download
+            >
+              <i class="fas fa-download"></i> Download Full Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-dark contact-section" id="contact">
+      <div class="container">
+        <div class="contact-content fade-in">
+          <h2 class="contact-title">Let's Build Something Great</h2>
+          <p class="contact-description">
+            Available for senior Angular roles, contract work, and technical
+            leadership positions. I thrive in remote, async-first environments.
+          </p>
+
+          <div class="contact-cta">
+            <a
+              href="mailto:Mohamed_Samir9696@hotmail.com"
+              class="btn btn-primary"
+            >
+              <i class="fas fa-envelope"></i> Get In Touch
+            </a>
+          </div>
+
+          <div class="social-links" style="justify-content: center">
             <a
               href="https://www.linkedin.com/in/mohamed-samir2211/"
               target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-          </div>
-          <!-- / Social Links -->
-
-          <!-- Copyrights -->
-          <div class="copyrights">© 2024 All rights reserved.</div>
-          <!-- / Copyrights -->
-        </div>
-      </header>
-      <!-- /Header -->
-
-      <!-- Mobile Header -->
-      <div class="mobile-header mobile-visible">
-        <div class="mobile-logo-container">
-          <div class="mobile-header-image">
-            <a href="#">
-              <img src="images/profile-pic.png" alt="image" />
+              rel="noopener noreferrer"
+              class="social-link"
+              aria-label="LinkedIn Profile"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/Msamir22"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              aria-label="GitHub Profile"
+            >
+              <i class="fab fa-github"></i>
             </a>
           </div>
-          <div class="mobile-site-title"><a href="#">Mohamed Samir</a></div>
-        </div>
 
-        <a class="menu-toggle mobile-visible">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-      <!-- /Mobile Header -->
-
-      <!-- Arrows Nav -->
-      <div class="lmpixels-arrows-nav">
-        <div class="lmpixels-arrow-left">
-          <i class="lnr lnr-chevron-left"></i>
-        </div>
-        <div class="lmpixels-arrow-right">
-          <i class="lnr lnr-chevron-right"></i>
-        </div>
-      </div>
-      <!-- /Arrows Nav -->
-
-      <!-- Main Content -->
-      <div id="main" class="site-main">
-        <!-- Page changer wrapper -->
-        <div class="pt-wrapper">
-          <!-- Subpages -->
-          <div class="subpages">
-            <!-- Home Subpage -->
-            <section class="pt-page" data-id="about-me">
-              <div class="section-inner start-page-full-width">
-                <div class="start-page-full-width">
-                  <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-6">
-                      <div class="inner-content">
-                        <div class="fill-block"></div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6">
-                      <div class="inner-content">
-                        <div class="hp-text-block">
-                          <!-- Text rotation / Subtitle -->
-                          <div class="owl-carousel text-rotation">
-                            <div class="item">
-                              <div class="sp-subtitle">
-                                Senior Front-End Engineer
-                              </div>
-                            </div>
-                            <div class="item">
-                              <div class="sp-subtitle">Angular Expert</div>
-                            </div>
-                          </div>
-                          <!-- /Text rotation / Subtitle -->
-
-                          <h2 class="hp-main-title">Mohamed Samir</h2>
-                          <p>
-                            Dedicated and results-oriented Front-End Engineer
-                            with 7 years of experience and a degree in Computer
-                            Science. specialized in Angular framework. Proven
-                            track record in developing dynamic, high-performance
-                            web applications with a focus on user experience,
-                            scalability, and maintainability.
-                          </p>
-                          <p>
-                            Proficient in HTML5, CSS3, JavaScript (ES6),
-                            TypeScript, Bootstrap, OOP, Design Patterns,
-                            Algorithms, and modern front-end development tools
-                            and methodologies. Demonstrated ability to
-                            collaborate effectively with cross-functional teams
-                            to deliver robust and innovative solutions.
-                            Passionate about learning new technologies and best
-                            practices to continuously enhance technical skills
-                            and project outcomes.
-                          </p>
-                          <div class="hp-buttons">
-                            <a
-                              href="files/Mohamed_Samir_CV.pdf"
-                              class="btn btn-primary"
-                              download
-                              >Download CV</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="section-inner custom-page-content">
-                <div class="page-content">
-                  <!-- Services Block Title -->
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <div class="col-inner">
-                        <div class="block-title">
-                          <h3>What I Do</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- /Services Block Title -->
-
-                  <!-- Services Block -->
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                      <div class="col-inner">
-                        <div class="info-list-w-icon">
-                          <!-- Service Item 1 -->
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-screen"></i>
-                            </div>
-                            <div class="ci-text">
-                              <h4>Web Application Development</h4>
-                              <p>
-                                <li>
-                                  Designing and developing responsive web
-                                  applications using Angular, HTML5, CSS3, and
-                                  JavaScript/TypeScript.
-                                </li>
-                                <li>
-                                  Implementing complex business logic and state
-                                  management using Angular's core features, such
-                                  as components, services, and modules.
-                                </li>
-                              </p>
-                            </div>
-                          </div>
-                          <!-- /Service Item 1 -->
-
-                          <!-- Service Item 2 -->
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-link"></i>
-                            </div>
-                            <div class="ci-text">
-                              <h4>RESTful API Integrationn</h4>
-                              <p>
-                                <li>
-                                  Consuming and integrating RESTful APIs to
-                                  fetch and update data dynamically.
-                                </li>
-
-                                <li>
-                                  Implementing authentication and authorization
-                                  mechanisms for secure API interactions.
-                                </li>
-                              </p>
-                            </div>
-                          </div>
-                          <!-- Service Item 2 -->
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6">
-                      <div class="col-inner">
-                        <div class="info-list-w-icon">
-                          <!-- Service Item 3 -->
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-laptop-phone"></i>
-                            </div>
-                            <div class="ci-text">
-                              <h4>UI/UX Design Integration</h4>
-                              <p>
-                                <li>
-                                  Collaborating with UX/UI designers to create
-                                  intuitive and visually appealing user
-                                  interfaces.
-                                </li>
-                                <li>
-                                  Ensuring cross-browser compatibility and
-                                  optimizing front-end performance for a
-                                  seamless user experience.
-                                </li>
-                              </p>
-                            </div>
-                          </div>
-                          <!-- Service Item 3 -->
-
-                          <!-- Service Item 4 -->
-                          <div class="info-block-w-icon">
-                            <div class="ci-icon">
-                              <i class="lnr lnr-bug"></i>
-                            </div>
-                            <div class="ci-text">
-                              <h4>Testing and Debugging</h4>
-                              <p>
-                                <li>
-                                  Writing unit tests using Jasmine and Karma to
-                                  ensure code quality and reliability.
-                                </li>
-                                <li>
-                                  Conducting end-to-end testing with Cypress to
-                                  validate the functionality of the entire
-                                  application.
-                                </li>
-                              </p>
-                            </div>
-                          </div>
-                          <!-- Service Item 4 -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- /Services Block -->
-                </div>
-              </div>
-            </section>
-            <!-- End of Home Subpage -->
-
-            <!-- Resume Subpage -->
-            <section class="pt-page" data-id="resume">
-              <div class="section-inner custom-page-content">
-                <div class="section-title-block second-style">
-                  <h2 class="section-title">Resume</h2>
-                  <h5 class="section-description">7 Years of Experience</h5>
-                </div>
-
-                <div class="section-content">
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-8">
-                      <div class="col-inner bs-30">
-                        <div class="block-title">
-                          <h3>Education</h3>
-                        </div>
-
-                        <div
-                          class="timeline timeline-second-style bs-30 clearfix"
-                        >
-                          <div class="timeline-item clearfix">
-                            <div class="left-part">
-                              <h5 class="item-period">2018</h5>
-                              <span class="item-company"
-                                >Misr University for Science and
-                                Technology</span
-                              >
-                            </div>
-                            <div class="divider"></div>
-                            <div class="right-part">
-                              <h4 class="item-title">Computer Science</h4>
-                              <p>
-                                A comprehensive and rigorous program providing a
-                                solid foundation in both theoretical and
-                                practical aspects of computer science. Key areas
-                                of study included:
-
-                                <li>Data Structures and Algorithms</li>
-                                <li>Operating Systems</li>
-                                <li>Computer Networks Database</li>
-                                <li>Database Management Systems</li>
-                                <li>Software Engineering</li>
-                              </p>
-                            </div>
-                          </div>
-
-                          <div class="timeline-item clearfix">
-                            <div class="left-part">
-                              <h5 class="item-period">2018</h5>
-                              <span class="item-company">Udacity</span>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="right-part">
-                              <h4 class="item-title">
-                                Full Stack Web Developer Nano-Degree
-                              </h4>
-                              <p>
-                                an intensive, project-based program designed to
-                                equip students with the essential skills needed
-                                to build complex web applications from end to
-                                end. The curriculum covers a broad spectrum of
-                                technologies and best practices in web
-                                development, including:
-                              </p>
-
-                              <ul>
-                                <b>Front-End Development:</b>
-                                <li>
-                                  Mastery of HTML, CSS, and JavaScript for
-                                  creating responsive and interactive user
-                                  interfaces.
-                                </li>
-                              </ul>
-
-                              <ul>
-                                <b>Back-End Development: </b>
-                                <li>
-                                  In-depth understanding of server-side
-                                  programming with Python
-                                </li>
-                                <li>
-                                  Implementation of user authentication and
-                                  authorization.
-                                </li>
-                              </ul>
-
-                              <ul>
-                                <b>Database Management:</b>
-                                <li>
-                                  Proficiency in working with relational
-                                  databases like PostgreSQL.
-                                </li>
-                              </ul>
-
-                              <ul>
-                                <b>DevOps and Deployment:</b>
-                                <li>
-                                  Knowledge of version control with Git and
-                                  collaboration using GitHub.
-                                </li>
-                                <li>
-                                  Deploying applications to cloud platforms such
-                                  as AWS
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-
-                          <div class="timeline-item clearfix">
-                            <div class="left-part">
-                              <h5 class="item-period">2017</h5>
-                              <span class="item-company">Udemy</span>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="right-part">
-                              <h4 class="item-title">
-                                Accelerated ES6 JavaScript Training
-                              </h4>
-                              <p>
-                                an intensive course focused on the latest
-                                features introduced in ES6 JavaScript.
-
-                                <li>
-                                  Advanced topics including Promises, the
-                                  Reflect API, the Proxy API, Maps & Sets, and
-                                  numerous new methods and functions.
-                                </li>
-                                <li>
-                                  Practical, hands-on learning with a final
-                                  project demonstrating the application of ES6
-                                  features in real-world scenarios.
-                                </li>
-                              </p>
-                            </div>
-                          </div>
-
-                          <div class="timeline-item clearfix">
-                            <div class="left-part">
-                              <h5 class="item-period">2017</h5>
-                              <span class="item-company">Udemy</span>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="right-part">
-                              <h4 class="item-title">
-                                The Complete Angular Course Beginner to Advanced
-                              </h4>
-                              <p>
-                                A course focused on learning the essentials and
-                                advanced topics of building client apps with
-                                Angular
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="block-title">
-                          <h3>Experience<span></span></h3>
-                        </div>
-
-                        <div class="timeline timeline-second-style clearfix">
-                          <div class="timeline-item clearfix">
-                            <div class="left-part">
-                              <h5 class="item-period">2020 - Current</h5>
-                              <span class="item-company"
-                                >Capstone Logistics</span
-                              >
-                            </div>
-                            <div class="divider"></div>
-                            <div class="right-part">
-                              <h4 class="item-title">
-                                Senior Front End Engineer (Angular)
-                              </h4>
-                              <p>
-                                As a Senior Front-End Engineer at Capstone
-                                Logistics, I developed and maintained Angular
-                                applications that significantly improved
-                                efficiency and client satisfaction. I created
-                                reusable Angular components for a web-based Yard
-                                Management System and contributed to the
-                                development of the ERP system, Managed
-                                Receiving, which offers solutions for supply
-                                chain, warehouse, and freight management. I
-                                collaborated with a team of 25 in an agile
-                                environment, performed code reviews, supervised
-                                three front-end associates, and utilized Jasmine
-                                and Cypress for e2e testing and unit testing.
-                              </p>
-                            </div>
-                          </div>
-
-                          <div class="timeline-item clearfix">
-                            <div class="left-part">
-                              <h5 class="item-period">2019 - 2020</h5>
-                              <span class="item-company">Miramar Tech</span>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="right-part">
-                              <h4 class="item-title">
-                                Front End Engineer (Angular)
-                              </h4>
-                              <p>
-                                As a Front-End Engineer at Miramar Tech, I
-                                developed and optimized responsive UI pages for
-                                the Prio App using Angular 11. I built key
-                                modules from scratch, including timer, team
-                                management, project management, and scheduling.
-                                I resolved 3-5 technical issues daily, enhancing
-                                user experience, and improved application
-                                performance by 25% through code optimization and
-                                refactoring. I created reusable TypeScript
-                                components and services to consume REST APIs and
-                                implemented HTTP requests using the RxJS.
-                                Additionally, I enabled seamless navigation
-                                using Angular Router.
-                              </p>
-                            </div>
-                          </div>
-
-                          <div class="timeline-item clearfix">
-                            <div class="left-part">
-                              <h5 class="item-period">2018 - 2019</h5>
-                              <span class="item-company">iSky Development</span>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="right-part">
-                              <h4 class="item-title">
-                                Front End Engineer (Angular)
-                              </h4>
-                              <p>
-                                As a Front-End Engineer at iSky Development, I
-                                designed and developed web applications using
-                                HTML5, CSS3, Bootstrap, JavaScript, Angular,
-                                RxJS, and Angular Material. I built essential
-                                modules for the ThoroughWorks and Website
-                                Management and Task Tracking System Apps,
-                                including task manager, timesheets, contacts,
-                                dashboard, products, and site manager. I
-                                collaborated with cross-functional teams to
-                                deliver projects on time, utilizing Bootstrap
-                                and SASS for responsive design and ensuring a
-                                high-quality user interface through extensive
-                                use of modern web technologies.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-4">
-                      <div class="col-inner">
-                        <div class="block-title">
-                          <h3>Programming Languages<span></span></h3>
-                        </div>
-
-                        <div class="skills-info skills-second-style">
-                          <!-- Skill 1 -->
-                          <div class="clearfix">
-                            <h4>JavaScript(ES6)</h4>
-                            <div class="skill-value">95%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-1"></div>
-                          </div>
-                          <!-- /Skill 1 -->
-
-                          <!-- Skill 2 -->
-                          <div class="clearfix">
-                            <h4>Typescript</h4>
-                            <div class="skill-value">95%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-1"></div>
-                          </div>
-                          <!-- /Skill 2 -->
-
-                          <!-- Skill 3 -->
-                          <div class="clearfix">
-                            <h4>Node JS</h4>
-                            <div class="skill-value">60%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-7"></div>
-                          </div>
-                          <!-- /Skill 3 -->
-
-                          <!-- Skill 4 -->
-                          <div class="clearfix">
-                            <h4>Python</h4>
-                            <div class="skill-value">60%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-7"></div>
-                          </div>
-                          <!-- /Skill 4 -->
-
-                          <!-- Skill 5 -->
-                          <div class="clearfix">
-                            <h4>SQL</h4>
-                            <div class="skill-value">75%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-8"></div>
-                          </div>
-                          <!-- /Skill 5 -->
-                        </div>
-
-                        <div class="block-title ts-10">
-                          <h3>Frameworks & Libraries<span></span></h3>
-                        </div>
-
-                        <div class="skills-info skills-second-style">
-                          <!-- Skill 5 -->
-                          <div class="clearfix">
-                            <h4>Angular 16</h4>
-                            <div class="skill-value">100%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-9"></div>
-                          </div>
-                          <!-- /Skill 5 -->
-
-                          <!-- Skill 6 -->
-                          <div class="clearfix">
-                            <h4>RxJS</h4>
-                            <div class="skill-value">95%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-1"></div>
-                          </div>
-                          <!-- /Skill 6 -->
-
-                          <!-- Skill 7 -->
-                          <div class="clearfix">
-                            <h4>NGRX</h4>
-                            <div class="skill-value">60%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-7"></div>
-                          </div>
-                          <!-- /Skill 7 -->
-
-                          <!-- Skill 8 -->
-                          <div class="clearfix">
-                            <h4>NestJS</h4>
-                            <div class="skill-value">60%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-7"></div>
-                          </div>
-                          <!-- /Skill 8 -->
-
-                          <!-- Skill 9 -->
-                          <div class="clearfix">
-                            <h4>Bootstrap</h4>
-                            <div class="skill-value">100%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-9"></div>
-                          </div>
-                          <!-- /Skill 9 -->
-
-                          <!-- Skill 10 -->
-                          <div class="clearfix">
-                            <h4>Jasmine</h4>
-                            <div class="skill-value">80%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-10"></div>
-                          </div>
-                          <!-- /Skill 10 -->
-                        </div>
-
-                        <div class="block-title ts-10">
-                          <h3>Web Development<span></span></h3>
-                        </div>
-
-                        <div class="skills-info skills-second-style">
-                          <!-- Skill 5 -->
-                          <div class="clearfix">
-                            <h4>HTML5</h4>
-                            <div class="skill-value">100%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-9"></div>
-                          </div>
-                          <!-- /Skill 5 -->
-
-                          <!-- Skill 6 -->
-                          <div class="clearfix">
-                            <h4>CSS3</h4>
-                            <div class="skill-value">100%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-9"></div>
-                          </div>
-                          <!-- /Skill 6 -->
-
-                          <!-- Skill 7 -->
-                          <div class="clearfix">
-                            <h4>SCSS</h4>
-                            <div class="skill-value">85%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-5"></div>
-                          </div>
-                          <!-- /Skill 7 -->
-
-                          <!-- Skill 8 -->
-                          <div class="clearfix">
-                            <h4>Restful API</h4>
-                            <div class="skill-value">100%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-9"></div>
-                          </div>
-                          <!-- /Skill 8 -->
-
-                          <!-- Skill 9 -->
-                          <div class="clearfix">
-                            <h4>Angular CLI</h4>
-                            <div class="skill-value">95%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-1"></div>
-                          </div>
-                          <!-- /Skill 9 -->
-
-                          <!-- Skill 10 -->
-                          <div class="clearfix">
-                            <h4>Cloud Functions</h4>
-                            <div class="skill-value">70%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-6"></div>
-                          </div>
-                          <!-- /Skill 10 -->
-                        </div>
-
-                        <div class="block-title ts-10">
-                          <h3>Methodologies<span></span></h3>
-                        </div>
-
-                        <div class="skills-info skills-second-style">
-                          <!-- Skill 5 -->
-                          <div class="clearfix">
-                            <h4>OOP</h4>
-                            <div class="skill-value">95%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-1"></div>
-                          </div>
-                          <!-- /Skill 5 -->
-
-                          <!-- Skill 6 -->
-                          <div class="clearfix">
-                            <h4>Database Design</h4>
-                            <div class="skill-value">75%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-8"></div>
-                          </div>
-                          <!-- /Skill 6 -->
-
-                          <!-- Skill 7 -->
-                          <div class="clearfix">
-                            <h4>Data Structure</h4>
-                            <div class="skill-value">85%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-5"></div>
-                          </div>
-                          <!-- /Skill 7 -->
-
-                          <!-- Skill 8 -->
-                          <div class="clearfix">
-                            <h4>Algorithms</h4>
-                            <div class="skill-value">60%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-7"></div>
-                          </div>
-                          <!-- /Skill 8 -->
-
-                          <!-- Skill 9 -->
-                          <div class="clearfix">
-                            <h4>Design Patterns</h4>
-                            <div class="skill-value">65%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-2"></div>
-                          </div>
-                          <!-- /Skill 9 -->
-
-                          <!-- Skill 10 -->
-                          <div class="clearfix">
-                            <h4>UML</h4>
-                            <div class="skill-value">60%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-7"></div>
-                          </div>
-                          <!-- /Skill 10 -->
-                        </div>
-
-                        <div class="block-title ts-10">
-                          <h3>Databases<span></span></h3>
-                        </div>
-
-                        <div class="skills-info skills-second-style">
-                          <!-- Skill 5 -->
-                          <div class="clearfix">
-                            <h4>MySQL</h4>
-                            <div class="skill-value">80%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-3"></div>
-                          </div>
-                          <!-- /Skill 5 -->
-
-                          <!-- Skill 6 -->
-                          <div class="clearfix">
-                            <h4>SQL Server</h4>
-                            <div class="skill-value">70%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-6"></div>
-                          </div>
-                          <!-- /Skill 6 -->
-
-                          <!-- Skill 7 -->
-                          <div class="clearfix">
-                            <h4>Firebase</h4>
-                            <div class="skill-value">85%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-5"></div>
-                          </div>
-                          <!-- /Skill 7 -->
-
-                          <!-- Skill 8 -->
-                          <div class="clearfix">
-                            <h4>PostgreSQL</h4>
-                            <div class="skill-value">65%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-2"></div>
-                          </div>
-                          <!-- /Skill 8 -->
-                        </div>
-
-                        <div class="block-title ts-10">
-                          <h3>Tools & Cloud Service<span></span></h3>
-                        </div>
-
-                        <div class="skills-info skills-second-style">
-                          <!-- Skill 5 -->
-                          <div class="clearfix">
-                            <h4>Git</h4>
-                            <div class="skill-value">90%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-4"></div>
-                          </div>
-                          <!-- /Skill 5 -->
-
-                          <!-- Skill 6 -->
-                          <div class="clearfix">
-                            <h4>Azure DevOps</h4>
-                            <div class="skill-value">70%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-6"></div>
-                          </div>
-                          <!-- /Skill 6 -->
-
-                          <!-- Skill 7 -->
-                          <div class="clearfix">
-                            <h4>Nx workspace</h4>
-                            <div class="skill-value">85%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-5"></div>
-                          </div>
-                          <!-- /Skill 7 -->
-
-                          <!-- Skill 8 -->
-                          <div class="clearfix">
-                            <h4>Cypress</h4>
-                            <div class="skill-value">75%</div>
-                          </div>
-                          <div class="skill-container">
-                            <div class="skill-percentage skill-8"></div>
-                          </div>
-                          <!-- /Skill 8 -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <div class="col-inner ts-30">
-                        <a
-                          href="files/Mohamed_Samir_CV.pdf"
-                          target="_blank"
-                          class="btn btn-primary"
-                          download
-                          >Download CV</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- End of Resume Subpage -->
-
-            <!-- Portfolio Subpage -->
-            <section class="pt-page" data-id="portfolio">
-              <div class="section-inner custom-page-content">
-                <div class="section-title-block second-style">
-                  <h2 class="section-title">Portfolio</h2>
-                  <h5 class="section-description">My Works</h5>
-                </div>
-
-                <div class="section-content">
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <!-- Portfolio Content -->
-                      <div class="portfolio-content">
-                        <!-- Portfolio Grid -->
-                        <div class="portfolio-grid three-columns">
-                          <figure class="item standard">
-                            <div class="portfolio-item-img">
-                              <img
-                                src="images/portfolio/YMS.png"
-                                alt="Yard Management System"
-                                title=""
-                              />
-                              <a href="YMS.html" class="ajax-page-load"></a>
-                            </div>
-
-                            <h4 class="name">Yard Management System</h4>
-                            <span class="category">ERP System</span>
-                          </figure>
-
-                          <figure class="item standard">
-                            <div class="portfolio-item-img">
-                              <img
-                                src="images/portfolio/MR.png"
-                                alt="Managed Receiving"
-                                title=""
-                              />
-                              <a href="MR.html" class="ajax-page-load"></a>
-                            </div>
-
-                            <h4 class="name">Managed Receiving</h4>
-                            <span class="category">ERP System</span>
-                          </figure>
-
-                          <figure class="item standard">
-                            <div class="portfolio-item-img">
-                              <img
-                                src="images/portfolio/TW.png"
-                                alt="ThoroughWorks"
-                                title=""
-                              />
-                              <a href="TW.html" class="ajax-page-load"></a>
-                            </div>
-
-                            <h4 class="name">ThoroughWorks</h4>
-                            <span class="category"
-                              >Sales Management Website</span
-                            >
-                          </figure>
-
-                          <figure class="item standard">
-                            <div class="portfolio-item-img">
-                              <img
-                                src="images/portfolio/Portal.png"
-                                alt="Website Management and Task Tracking System"
-                                title=""
-                              />
-                              <a href="PORTAL.html" class="ajax-page-load"></a>
-                            </div>
-
-                            <h4 class="name">Portal Management</h4>
-                            <span class="category">CRM & ERP</span>
-                          </figure>
-
-                          <figure class="item standard">
-                            <div class="portfolio-item-img">
-                              <img
-                                src="images/portfolio/Prio.png"
-                                alt="Prio"
-                                title=""
-                              />
-                              <a href="PRIO.html" class="ajax-page-load"></a>
-                            </div>
-
-                            <h4 class="name">Prio</h4>
-                            <span class="category">Sass Product</span>
-                          </figure>
-
-                          <figure class="item standard">
-                            <div class="portfolio-item-img">
-                              <img
-                                src="images/portfolio/Takafo.png"
-                                alt="Takafo"
-                                title=""
-                              />
-                              <a href="TAKAFO.html" class="ajax-page-load"></a>
-                            </div>
-
-                            <h4 class="name">Takafo HR Solution</h4>
-                            <span class="category">AI HR Solution</span>
-                          </figure>
-                        </div>
-                      </div>
-                      <!-- /Portfolio Content -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- /Portfolio Subpage -->
-
-            <!-- Contact Subpage -->
-            <section class="pt-page" data-id="contact">
-              <div class="section-inner custom-page-content">
-                <div class="section-title-block second-style">
-                  <h2 class="section-title">Contact</h2>
-                  <h5 class="section-description">Get in Touch</h5>
-                </div>
-
-                <div class="section-content">
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-3">
-                      <div class="col-inner bs-30">
-                        <div class="lm-info-block gray-default">
-                          <i class="lnr lnr-phone-handset"></i>
-                          <h4>+201098676440</h4>
-                          <span class="lm-info-block-value"></span>
-                          <span class="lm-info-block-text"></span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-2">
-                      <div class="col-inner bs-30">
-                        <div class="lm-info-block gray-default">
-                          <i class="lnr lnr-map-marker"></i>
-                          <h4>Cairo</h4>
-                          <span class="lm-info-block-value"></span>
-                          <span class="lm-info-block-text"></span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-4">
-                      <div class="col-inner bs-30">
-                        <div class="lm-info-block gray-default">
-                          <i class="lnr lnr-envelope"></i>
-                          <h4>Mohamed_Samir9696@hotmail.com</h4>
-                          <span class="lm-info-block-value"></span>
-                          <span class="lm-info-block-text"></span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-3">
-                      <div class="col-inner bs-30">
-                        <div class="lm-info-block gray-default">
-                          <i class="lnr lnr-checkmark-circle"></i>
-                          <h4>Freelance Available</h4>
-                          <span class="lm-info-block-value"></span>
-                          <span class="lm-info-block-text"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-xs-12 col-sm-8 offset-sm-1 offset-sm-2">
-                    <div class="col-inner ts-20">
-                      <div class="block-title">
-                        <h3>How Can I Help You?</h3>
-                      </div>
-
-                      <form
-                        id="contact_form"
-                        class="contact-form"
-                        action="contact_form/contact_form.php"
-                        method="post"
-                      >
-                        <div class="messages"></div>
-
-                        <div class="controls two-columns">
-                          <div class="fields clearfix">
-                            <div class="left-column">
-                              <div class="form-group form-group-with-icon">
-                                <input
-                                  id="form_name"
-                                  type="text"
-                                  name="name"
-                                  class="form-control"
-                                  placeholder="Full Name"
-                                  required="required"
-                                  data-error="Name is required."
-                                />
-                                <div class="form-control-border"></div>
-                                <div class="help-block with-errors"></div>
-                              </div>
-
-                              <div class="form-group form-group-with-icon">
-                                <input
-                                  id="form_email"
-                                  type="email"
-                                  name="email"
-                                  class="form-control"
-                                  placeholder="Email Address"
-                                  required="required"
-                                  data-error="Valid email is required."
-                                />
-                                <div class="form-control-border"></div>
-                                <div class="help-block with-errors"></div>
-                              </div>
-
-                              <div class="form-group form-group-with-icon">
-                                <input
-                                  id="form_subject"
-                                  type="text"
-                                  name="subject"
-                                  class="form-control"
-                                  placeholder="Subject"
-                                  required="required"
-                                  data-error="Subject is required."
-                                />
-                                <div class="form-control-border"></div>
-                                <div class="help-block with-errors"></div>
-                              </div>
-                            </div>
-                            <div class="right-column">
-                              <div class="form-group form-group-with-icon">
-                                <textarea
-                                  id="form_message"
-                                  name="message"
-                                  class="form-control"
-                                  placeholder="Message"
-                                  rows="7"
-                                  required="required"
-                                  data-error="Please, leave me a message."
-                                ></textarea>
-                                <div class="form-control-border"></div>
-                                <div class="help-block with-errors"></div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div
-                            class="g-recaptcha"
-                            data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"
-                          ></div>
-
-                          <input
-                            type="submit"
-                            class="button btn-send"
-                            value="Send message"
-                          />
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- End Contact Subpage -->
+          <div class="contact-info">
+            <a href="mailto:Mohamed_Samir9696@hotmail.com" class="contact-link">
+              <i class="fas fa-envelope"></i> Mohamed_Samir9696@hotmail.com
+            </a>
+            <a href="tel:+201098676440" class="contact-link">
+              <i class="fas fa-phone"></i> +20 109 867 6440
+            </a>
+            <span class="contact-link">
+              <i class="fas fa-map-marker-alt"></i> Cairo, Egypt
+            </span>
           </div>
         </div>
-        <!-- /Page changer wrapper -->
-      </div>
-      <!-- /Main Content -->
-    </div>
 
+        <footer
+          style="
+            text-align: center;
+            margin-top: var(--space-12);
+            padding-top: var(--space-6);
+            border-top: 1px solid var(--color-border-dark);
+          "
+        >
+          <p class="text-small" style="color: var(--color-text-tertiary)">
+            © 2024 Mohamed Samir. All rights reserved.
+          </p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/portfolio.js"></script>
+
+    <!-- Legacy scripts for project detail pages -->
     <script src="js/jquery-2.1.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/pages-switcher.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/validator.js"></script>
-    <script src="js/jquery.shuffle.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <!--<script src="https://maps.googleapis.com/maps/api/js?key=YOUR-API-KEY"></script>-->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="js/jquery.googlemap.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
