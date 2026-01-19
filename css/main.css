@@ -683,7 +683,7 @@ blockquote {
 }
 
 .section-inner.start-page-full-width .inner-content .fill-block {
-  background-image: url(../images/profile-pic.jpg);
+  background-image: url(../images/profile-pic.png);
 }
 .section-inner.start-page-full-width .inner-content .fill-block {
   position: relative;
@@ -828,9 +828,8 @@ blockquote {
 }
 
 .my-photo img {
-  height: 80px;
-  max-height: 80px;
-  width: 80px;
+  height: 100%;
+  width: 100%;
 }
 
 .site-title-block {
