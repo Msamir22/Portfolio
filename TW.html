@@ -1,121 +1,245 @@
-<div id="ajax-page" class="ajax-page-content">
-  <div class="ajax-page-wrapper">
-    <div class="ajax-page-nav">
-      <div class="nav-item ajax-page-prev-next">
-        <a class="ajax-page-load" href="MR.html"
-          ><i class="lnr lnr-chevron-left"></i
-        ></a>
-        <a class="ajax-page-load" href="PRIO.html"
-          ><i class="lnr lnr-chevron-right"></i
-        ></a>
-      </div>
-      <div class="nav-item ajax-page-close-button">
-        <a id="ajax-page-close-button" href="#"
-          ><i class="lnr lnr-cross"></i
-        ></a>
-      </div>
-    </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <div class="ajax-page-title">
-      <h1>ThoroughWorks</h1>
-    </div>
+    <title>ThoroughWorks | Mohamed Samir - Portfolio</title>
+    <meta
+      name="description"
+      content="Sales management website with task manager, timesheets, and dashboard modules. Built with Angular and Bootstrap."
+    />
 
-    <div class="row">
-      <div class="col-sm-7 col-md-7 portfolio-block">
-        <div class="owl-carousel portfolio-page-carousel">
-          <div class="item">
-            <img src="images/portfolio/full/TW1.png" />
-          </div>
-          <div class="item">
-            <img src="images/portfolio/full/TW2.png" />
-          </div>
-          <div class="item">
-            <img src="images/portfolio/full/TW3.png" />
-          </div>
-        </div>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/design-system.css" />
+  </head>
 
-        <div
-          class="portfolio-page-video embed-responsive embed-responsive-16by9"
+  <body class="project-page">
+    <nav class="nav scrolled" id="main-nav">
+      <div class="container nav-content">
+        <a href="index.html" class="nav-logo logo-text">
+          <span class="logo-m">M</span><span class="logo-s">S</span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+          <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+          <li>
+            <a href="index.html#experience" class="nav-link">Experience</a>
+          </li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation"
         >
-          <iframe
-            class="embed-responsive-item"
-            width="1349"
-            height="480"
-            src="https://www.youtube.com/embed/SS3nnISrW04"
-            title="ThoroughWorks Software"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-
-        <script type="text/javascript">
-          jQuery(document).ready(function ($) {
-            $(".portfolio-page-carousel").owlCarousel({
-              smartSpeed: 1200,
-              items: 1,
-              loop: true,
-              dots: true,
-              nav: true,
-              navText: false,
-              margin: 10,
-            });
-          });
-        </script>
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
+    </nav>
 
-      <div class="col-sm-5 col-md-5 portfolio-block">
-        <!-- Project Description -->
-        <div class="project-description">
-          <div class="block-title">
-            <h3>Description</h3>
+    <main class="section">
+      <div class="container">
+        <a href="index.html#projects" class="back-link">
+          <i class="fas fa-arrow-left"></i> Back to Projects
+        </a>
+
+        <header class="project-header">
+          <h1 class="project-title">ThoroughWorks</h1>
+
+          <div class="project-meta">
+            <span class="project-meta-badge">
+              <i class="fas fa-building"></i> iSky Development
+            </span>
+            <span class="project-meta-item">
+              <i class="fas fa-calendar"></i> 2018
+            </span>
           </div>
-          <ul class="project-general-info">
-            <li>
-              <p><i class="fa fa-building"></i>iSky Development</p>
-            </li>
-            <li>
-              <p>
-                <i class="fa fa-globe"></i>
-                <a href="https://w-sales.thoroughworks.com/" target="_blank"
-                  >ThoroughWorks Website</a
-                >
-              </p>
-            </li>
-            <li>
-              <p><i class="fa fa-calendar"></i>January, 2018</p>
-            </li>
-          </ul>
 
-          <p class="text-justify">
-            ThoroughWorks is an end-to-end solution and mobile office for all
-            sales requirements, from pre-sale document tracking and sales
-            inspection management through to sales accounting and invoicing.
+          <p class="project-intro">
+            Sales management website with comprehensive task manager,
+            timesheets, contacts, and dashboard modules for business operations.
           </p>
-          <!-- /Project Description -->
+        </header>
 
-          <!-- Technology -->
-          <div class="tags-block">
-            <div class="block-title">
-              <h3>Technology</h3>
+        <div class="project-content">
+          <div class="project-gallery-wrapper">
+            <div class="project-gallery" id="project-gallery">
+              <img
+                src="images/portfolio/full/TW1.png"
+                alt="ThoroughWorks Dashboard"
+                class="project-gallery-main"
+                id="gallery-main-image"
+              />
+              <button
+                class="project-gallery-nav project-gallery-prev"
+                id="gallery-prev"
+                aria-label="Previous image"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button
+                class="project-gallery-nav project-gallery-next"
+                id="gallery-next"
+                aria-label="Next image"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </button>
+              <div class="project-gallery-dots" id="gallery-dots">
+                <button
+                  class="project-gallery-dot active"
+                  data-index="0"
+                  aria-label="View image 1"
+                ></button>
+                <button
+                  class="project-gallery-dot"
+                  data-index="1"
+                  aria-label="View image 2"
+                ></button>
+                <button
+                  class="project-gallery-dot"
+                  data-index="2"
+                  aria-label="View image 3"
+                ></button>
+              </div>
             </div>
-            <ul class="tags">
-              <li><a>HTML5</a></li>
-              <li><a>CSS3</a></li>
-              <li><a>Angular</a></li>
-              <li><a>TypeScript</a></li>
-              <li><a>RxJS</a></li>
-              <li><a>RESTful API</a></li>
-              <li><a>Jasmine</a></li>
-              <li><a>Angular Material</a></li>
-              <li><a>SCSS</a></li>
-            </ul>
+
+            <div class="project-thumbnails">
+              <button class="project-thumbnail active" data-index="0">
+                <img
+                  src="images/portfolio/full/TW1.png"
+                  alt="TW Screenshot 1"
+                />
+              </button>
+              <button class="project-thumbnail" data-index="1">
+                <img
+                  src="images/portfolio/full/TW2.png"
+                  alt="TW Screenshot 2"
+                />
+              </button>
+              <button class="project-thumbnail" data-index="2">
+                <img
+                  src="images/portfolio/full/TW3.png"
+                  alt="TW Screenshot 3"
+                />
+              </button>
+            </div>
           </div>
-          <!-- /Technology -->
+
+          <aside class="project-details">
+            <section class="project-section">
+              <h2 class="project-section-title">Project Overview</h2>
+              <div class="project-section-content">
+                <p>
+                  A comprehensive sales management platform designed to
+                  streamline business operations. Features include task
+                  management, timesheet tracking, contact management, and
+                  analytics dashboards.
+                </p>
+              </div>
+            </section>
+
+            <section class="project-section">
+              <h2 class="project-section-title">My Role</h2>
+              <ul class="project-role-list">
+                <li>Designed and developed web application using Angular</li>
+                <li>
+                  Built essential modules: task manager, timesheets, contacts,
+                  dashboard
+                </li>
+                <li>Implemented responsive UI with Bootstrap and SCSS</li>
+                <li>Collaborated with cross-functional teams</li>
+              </ul>
+            </section>
+
+            <section class="project-section">
+              <h2 class="project-section-title">Technologies</h2>
+              <div class="project-tech-tags">
+                <span class="tag tag-primary">Angular</span>
+                <span class="tag tag-primary">TypeScript</span>
+                <span class="tag">Bootstrap</span>
+                <span class="tag">SCSS</span>
+                <span class="tag">REST API</span>
+              </div>
+            </section>
+          </aside>
         </div>
-        <!-- Project Description -->
       </div>
-    </div>
-  </div>
-</div>
+    </main>
+
+    <footer class="section section-dark" style="padding: var(--space-8) 0">
+      <div class="container text-center">
+        <p class="text-small" style="color: var(--color-text-tertiary)">
+          © 2024 Mohamed Samir. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        const images = [
+          "images/portfolio/full/TW1.png",
+          "images/portfolio/full/TW2.png",
+          "images/portfolio/full/TW3.png",
+        ];
+        let currentIndex = 0;
+
+        const mainImage = document.getElementById("gallery-main-image");
+        const dots = document.querySelectorAll(".project-gallery-dot");
+        const thumbnails = document.querySelectorAll(".project-thumbnail");
+        const prevBtn = document.getElementById("gallery-prev");
+        const nextBtn = document.getElementById("gallery-next");
+
+        function showImage(index) {
+          currentIndex = index;
+          if (currentIndex < 0) currentIndex = images.length - 1;
+          if (currentIndex >= images.length) currentIndex = 0;
+
+          mainImage.src = images[currentIndex];
+          dots.forEach((dot, i) =>
+            dot.classList.toggle("active", i === currentIndex),
+          );
+          thumbnails.forEach((thumb, i) =>
+            thumb.classList.toggle("active", i === currentIndex),
+          );
+        }
+
+        prevBtn.addEventListener("click", () => showImage(currentIndex - 1));
+        nextBtn.addEventListener("click", () => showImage(currentIndex + 1));
+        dots.forEach((dot) =>
+          dot.addEventListener("click", () =>
+            showImage(parseInt(dot.dataset.index)),
+          ),
+        );
+        thumbnails.forEach((thumb) =>
+          thumb.addEventListener("click", () =>
+            showImage(parseInt(thumb.dataset.index)),
+          ),
+        );
+
+        const navToggle = document.getElementById("nav-toggle");
+        const navLinks = document.getElementById("nav-links");
+        if (navToggle) {
+          navToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+            const icon = navToggle.querySelector("i");
+            icon.classList.toggle("fa-bars");
+            icon.classList.toggle("fa-times");
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
