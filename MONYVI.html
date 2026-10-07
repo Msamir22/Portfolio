@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Monyvi | Mohamed Samir - Portfolio</title>
+    <meta
+      name="description"
+      content="Monyvi is an offline-first personal finance application for Egyptian users, combining React Native, Expo, Supabase, WatermelonDB, AI-powered SMS and voice parsing, and custom agentic engineering workflows."
+    />
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/design-system.css" />
+  </head>
+
+  <body class="project-page">
+    <nav class="nav scrolled" id="main-nav">
+      <div class="container nav-content">
+        <a href="index.html" class="nav-logo logo-text">
+          <span class="logo-m">M</span><span class="logo-s">S</span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+          <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+          <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main class="section">
+      <div class="container">
+        <a href="index.html#projects" class="back-link">
+          <i class="fas fa-arrow-left"></i> Back to Projects
+        </a>
+
+        <header class="project-header">
+          <h1 class="project-title">Monyvi</h1>
+
+          <div class="project-meta">
+            <span class="project-meta-badge">
+              <i class="fas fa-user-gear"></i> Personal Product
+            </span>
+            <span class="project-meta-item">
+              <i class="fas fa-calendar"></i> 2026 - Present
+            </span>
+            <a
+              href="https://github.com/Msg22/Monyvi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-live-link"
+            >
+              <i class="fab fa-github"></i> GitHub Repository
+            </a>
+          </div>
+
+          <p class="project-intro">
+            An offline-first personal finance companion for the Egyptian market,
+            designed to reduce manual financial entry through voice, SMS
+            automation, and reliable local-first data flows.
+          </p>
+        </header>
+
+        <div class="project-content">
+          <div class="project-gallery-wrapper">
+            <div class="project-gallery">
+              <img
+                src="images/portfolio/Monyvi.svg"
+                alt="Monyvi personal finance and AI automation"
+                class="project-gallery-main"
+              />
+            </div>
+          </div>
+
+          <aside class="project-details">
+            <section class="project-section">
+              <h2 class="project-section-title">Product Scope</h2>
+              <div class="project-section-content">
+                <p>
+                  Monyvi tracks cash, bank accounts, digital wallets,
+                  transactions, budgets, recurring payments, multi-currency
+                  balances, precious-metal holdings, and live market rates. The
+                  product is built around the needs of Egyptian users and aims
+                  to make everyday financial tracking substantially less manual.
+                </p>
+              </div>
+            </section>
+
+            <section class="project-section">
+              <h2 class="project-section-title">Architecture</h2>
+              <ul class="project-role-list">
+                <li>
+                  React Native / Expo mobile application in an Nx monorepo
+                </li>
+                <li>
+                  WatermelonDB as the user-facing local source of truth with
+                  background Supabase synchronization
+                </li>
+                <li>
+                  Supabase Auth, PostgreSQL, RLS, Edge Functions, and SQL
+                  migrations
+                </li>
+                <li>
+                  Shared financial calculations and parsers isolated into
+                  reusable logic packages
+                </li>
+                <li>
+                  CI/CD and automated verification through GitHub Actions
+                </li>
+              </ul>
+            </section>
+
+            <section class="project-section">
+              <h2 class="project-section-title">AI & Automation</h2>
+              <ul class="project-role-list">
+                <li>
+                  DeepSeek V4 Flash through DeepInfra for structured
+                  SMS-to-transaction parsing
+                </li>
+                <li>
+                  Gemini 2.5 Flash-Lite for multilingual voice/audio-to-
+                  transaction parsing
+                </li>
+                <li>
+                  Structured model outputs, schema validation, retry/failure
+                  handling, provider configuration, and model evaluation
+                </li>
+                <li>
+                  Arabic, English, and mixed-language financial input support
+                </li>
+              </ul>
+            </section>
+
+            <section class="project-section">
+              <h2 class="project-section-title">Agentic Engineering</h2>
+              <div class="project-section-content">
+                <p>
+                  I designed repository-level AI workflows and reusable skills
+                  for architecture, planning, TDD, code review, PR follow-up,
+                  UI/mockup implementation, session handoffs, and multi-agent
+                  task delegation. The workflow emphasizes scoped ownership,
+                  explicit approval boundaries, deterministic verification, and
+                  human review rather than treating AI output as automatically
+                  correct.
+                </p>
+              </div>
+            </section>
+
+            <section class="project-section">
+              <h2 class="project-section-title">Technologies</h2>
+              <div class="project-tech-tags">
+                <span class="tag tag-primary">React Native</span>
+                <span class="tag tag-primary">Expo</span>
+                <span class="tag tag-primary">TypeScript</span>
+                <span class="tag">WatermelonDB</span>
+                <span class="tag">Supabase</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Nx</span>
+                <span class="tag">NativeWind</span>
+                <span class="tag">DeepSeek</span>
+                <span class="tag">Gemini</span>
+                <span class="tag">DeepInfra</span>
+                <span class="tag">GitHub Actions</span>
+                <span class="tag">Maestro</span>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="section section-dark" style="padding: var(--space-8) 0">
+      <div class="container text-center">
+        <p class="text-small" style="color: var(--color-text-tertiary)">
+          © 2026 Mohamed Samir. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        const navToggle = document.getElementById("nav-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        if (navToggle) {
+          navToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+            const icon = navToggle.querySelector("i");
+            icon.classList.toggle("fa-bars");
+            icon.classList.toggle("fa-times");
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
