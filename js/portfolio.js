@@ -114,6 +114,10 @@
     const totalFrames = Math.round(duration / frameDuration);
     let frame = 0;
 
+    // Static HTML contains the real value for SEO/accessibility.
+    // Reset only when the visual count-up animation actually starts.
+    element.textContent = "0";
+
     const counter = setInterval(() => {
       frame++;
       const progress = frame / totalFrames;
