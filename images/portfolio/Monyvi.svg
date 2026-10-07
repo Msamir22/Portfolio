@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
   <title id="title">Monyvi personal finance and AI automation project</title>
-  <desc id="desc">A dark blue engineering-style cover for the Monyvi personal finance application.</desc>
+  <desc id="desc">A dark slate and Nile green engineering-style cover for the Monyvi personal finance application.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0F172A"/>
@@ -21,9 +21,9 @@
     <circle cx="90" cy="120" r="7"/><circle cx="260" cy="72" r="6"/><circle cx="360" cy="180" r="7"/>
     <circle cx="860" cy="90" r="6"/><circle cx="1060" cy="150" r="7"/><circle cx="930" cy="390" r="6"/>
   </g>
-  <rect x="455" y="122" width="290" height="290" rx="70" fill="#0f172a" stroke="url(#accent)" stroke-width="5"/>
+  <rect x="455" y="122" width="290" height="290" rx="70" fill="#0F172A" stroke="url(#accent)" stroke-width="5"/>
   <path d="M514 321 V214 L600 285 L686 214 V321" fill="none" stroke="url(#accent)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="600" y="500" text-anchor="middle" fill="#f8fafc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="70" font-weight="700">Monyvi</text>
-  <text x="600" y="555" text-anchor="middle" fill="#94a3b8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="27">Personal Finance • AI Automation • Offline-first</text>
+  <text x="600" y="500" text-anchor="middle" fill="#F8FAFC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="70" font-weight="700">Monyvi</text>
+  <text x="600" y="555" text-anchor="middle" fill="#94A3B8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="27">Personal Finance • AI Automation • Offline-first</text>
   <rect x="350" y="590" width="500" height="5" rx="3" fill="url(#accent)"/>
 </svg>
