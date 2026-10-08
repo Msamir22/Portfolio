@@ -511,6 +511,39 @@ h6 {
   transform: scale(1.02);
 }
 
+.card-logo-media {
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8);
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    var(--color-surface-light) 0%,
+    var(--color-surface-white) 100%
+  );
+}
+
+.card-logo-image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 180px;
+  max-height: 160px;
+  object-fit: contain;
+  transition: transform var(--transition-slow);
+}
+
+.card-logo-image--compact {
+  max-width: 112px;
+  max-height: 112px;
+}
+
+.card:hover .card-logo-image {
+  transform: scale(1.04);
+}
+
 .card-body {
   padding: var(--space-6);
 }
@@ -1322,6 +1355,28 @@ h6 {
   aspect-ratio: 16 / 10;
   object-fit: cover;
   display: block;
+}
+
+.logo-gallery {
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(var(--space-8), 6vw, var(--space-16));
+}
+
+.logo-gallery .project-gallery-main {
+  width: auto;
+  height: auto;
+  max-width: 220px;
+  max-height: 220px;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.logo-gallery .project-gallery-main.project-logo--compact {
+  max-width: 150px;
+  max-height: 150px;
 }
 
 .project-gallery-nav {

@@ -101,66 +101,12 @@
         <div class="project-content">
           <!-- Gallery Column -->
           <div class="project-gallery-wrapper">
-            <div class="project-gallery" id="project-gallery">
+            <div class="project-gallery logo-gallery">
               <img
-                src="images/portfolio/full/MR1.png"
-                alt="Managed Receiving Dashboard"
-                class="project-gallery-main"
-                id="gallery-main-image"
+                src="images/portfolio/logo-mr.png"
+                alt="Managed Receiving logo"
+                class="project-gallery-main project-logo--compact"
               />
-              <button
-                class="project-gallery-nav project-gallery-prev"
-                id="gallery-prev"
-                aria-label="Previous image"
-              >
-                <i class="fas fa-chevron-left"></i>
-              </button>
-              <button
-                class="project-gallery-nav project-gallery-next"
-                id="gallery-next"
-                aria-label="Next image"
-              >
-                <i class="fas fa-chevron-right"></i>
-              </button>
-              <div class="project-gallery-dots" id="gallery-dots">
-                <button
-                  class="project-gallery-dot active"
-                  data-index="0"
-                  aria-label="View image 1"
-                ></button>
-                <button
-                  class="project-gallery-dot"
-                  data-index="1"
-                  aria-label="View image 2"
-                ></button>
-                <button
-                  class="project-gallery-dot"
-                  data-index="2"
-                  aria-label="View image 3"
-                ></button>
-              </div>
-            </div>
-
-            <!-- Thumbnail Grid -->
-            <div class="project-thumbnails">
-              <button class="project-thumbnail active" data-index="0">
-                <img
-                  src="images/portfolio/full/MR1.png"
-                  alt="Managed Receiving Screenshot 1"
-                />
-              </button>
-              <button class="project-thumbnail" data-index="1">
-                <img
-                  src="images/portfolio/full/MR2.png"
-                  alt="Managed Receiving Screenshot 2"
-                />
-              </button>
-              <button class="project-thumbnail" data-index="2">
-                <img
-                  src="images/portfolio/full/MR3.png"
-                  alt="Managed Receiving Screenshot 3"
-                />
-              </button>
             </div>
           </div>
 
@@ -244,53 +190,7 @@
 
     <!-- JavaScript -->
     <script>
-      // Simple Gallery Script
       (function () {
-        const images = [
-          "images/portfolio/full/MR1.png",
-          "images/portfolio/full/MR2.png",
-          "images/portfolio/full/MR3.png",
-        ];
-        let currentIndex = 0;
-
-        const mainImage = document.getElementById("gallery-main-image");
-        const dots = document.querySelectorAll(".project-gallery-dot");
-        const thumbnails = document.querySelectorAll(".project-thumbnail");
-        const prevBtn = document.getElementById("gallery-prev");
-        const nextBtn = document.getElementById("gallery-next");
-
-        function showImage(index) {
-          currentIndex = index;
-          if (currentIndex < 0) currentIndex = images.length - 1;
-          if (currentIndex >= images.length) currentIndex = 0;
-
-          mainImage.src = images[currentIndex];
-
-          dots.forEach((dot, i) => {
-            dot.classList.toggle("active", i === currentIndex);
-          });
-
-          thumbnails.forEach((thumb, i) => {
-            thumb.classList.toggle("active", i === currentIndex);
-          });
-        }
-
-        prevBtn.addEventListener("click", () => showImage(currentIndex - 1));
-        nextBtn.addEventListener("click", () => showImage(currentIndex + 1));
-
-        dots.forEach((dot) => {
-          dot.addEventListener("click", () => {
-            showImage(parseInt(dot.dataset.index));
-          });
-        });
-
-        thumbnails.forEach((thumb) => {
-          thumb.addEventListener("click", () => {
-            showImage(parseInt(thumb.dataset.index));
-          });
-        });
-
-        // Mobile nav toggle
         const navToggle = document.getElementById("nav-toggle");
         const navLinks = document.getElementById("nav-links");
 
